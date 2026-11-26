@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shree Jewellers — Bhopal</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{noir:'#090807',espresso:'#14100E',ivory:'#FAF7F2',gold:'#D4AF37',pale:'#F3E5AB'},fontFamily:{serif:['Cormorant Garamond','serif'],sans:['Plus Jakarta Sans','sans-serif']}}}}</script>
+<style>
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#090807;color:#FAF7F2}
+.hair{border:1px solid rgba(212,175,55,.22)}
+.glass{background:rgba(9,8,7,.72);backdrop-filter:blur(14px)}
+.view{display:none}.view.on{display:block;animation:fi .6s ease}
+@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1}}
+.orb{position:absolute;border-radius:9999px;filter:blur(90px);background:rgba(212,175,55,.16);pointer-events:none}
+.nav a{cursor:pointer;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:6px 0;border-bottom:1px solid transparent;transition:.3s}
+.nav a:hover,.nav a.on{color:#D4AF37;border-color:#D4AF37}
+.pill{font-size:12px;padding:8px 16px;border:1px solid rgba(212,175,55,.3);border-radius:9999px;cursor:pointer;transition:.3s;color:#14100E}
+.pill.on,.pill:hover{background:#D4AF37;color:#090807;border-color:#D4AF37}
+.img{overflow:hidden;background:linear-gradient(135deg,#14100E,#3a2f1a)}.img{position:relative}.img:after{content:'SJ';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:42px;color:rgba(212,175,55,.35);letter-spacing:.2em;z-index:0}.img img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.card:hover .img img,.zoom:hover img{transform:scale(1.07)}
+.shim{position:relative}.shim:before{content:"";position:absolute;inset:-6px;border-radius:200px 200px 0 0;border:1px solid #D4AF37;background:linear-gradient(110deg,transparent 35%,rgba(243,229,171,.5) 50%,transparent 65%) 200% 0/250% 100%;-webkit-mask:linear-gradient(#000 0 0);animation:sh 4s infinite linear;pointer-events:none}
+@keyframes sh{to{background-position:-100% 0}}
+.btn{font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:16px 28px;transition:.3s;display:inline-block;cursor:pointer}
+.gold{background:#D4AF37;color:#090807}.gold:hover{background:#F3E5AB}.line{border:1px solid #D4AF37;color:#D4AF37}.line:hover{background:#D4AF37;color:#090807}
+input,select{background:#fff;border:1px solid rgba(212,175,55,.35);padding:12px 14px;width:100%;color:#14100E;font-size:14px;outline:none}input:focus,select:focus{border-color:#D4AF37}
+#pre{position:fixed;inset:0;z-index:100;background:#090807;display:flex;align-items:center;justify-content:center;transition:transform .6s cubic-bezier(.7,0,.2,1)}
+</style></head>
+<body>
+<div id="pre"><div class="hair border-gold w-24 h-24 flex items-center justify-center font-serif text-4xl text-gold" style="border-color:#D4AF37">SJ</div></div>
+
+<div class="bg-noir text-[11px] tracking-wider border-b" style="border-color:rgba(212,175,55,.22)"><div class="max-w-7xl mx-auto px-6 py-2 flex flex-wrap justify-between gap-2">
+<div class="flex items-center gap-3 text-pale"><span class="relative flex h-2 w-2"><span class="animate-ping absolute h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative h-2 w-2 rounded-full bg-emerald-500"></span></span><span class="text-emerald-400">LIVE • BHOPAL</span><span>24K: ₹7,850/g | 22K: ₹7,195/g | 18K: ₹5,890/g | Silver: ₹94/g</span></div>
+<div class="text-gold">BIS 916 HALLMARKED • IGI CERTIFIED</div></div></div>
+
+<header class="glass sticky top-0 z-50 border-b" style="border-color:rgba(212,175,55,.22)"><div class="max-w-7xl mx-auto px-6 py-4 flex flex-col lg:flex-row items-center justify-between gap-4">
+<div class="text-center lg:text-left cursor-pointer" onclick="go('home')"><div class="font-serif text-3xl tracking-[.3em] text-gold">SHREE JEWELLERS</div><div class="text-[10px] tracking-[.35em] text-pale/70">EST. 1954 • BHOPAL</div></div>
+<nav class="nav flex flex-wrap justify-center gap-x-7 gap-y-2" id="nav">
+<a data-v="home">Maison</a><a data-v="catalog">High Jewellery</a><a data-v="bridal">Bridal Couture</a><a data-v="calc">Gold Exchange & Plan</a><a data-v="salons">Bhopal Salons</a></nav></div></header>
+
+<main>
+<!-- HOME -->
+<section class="view on" id="v-home">
+<div class="relative bg-noir overflow-hidden min-h-[88vh] flex items-center"><div class="orb w-96 h-96 -top-20 -left-20"></div><div class="orb w-80 h-80 bottom-0 right-10"></div>
+<div class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center relative">
+<div><div class="text-[11px] tracking-[.4em] text-gold mb-8">HERITAGE ATELIER • BHOPAL</div>
+<h1 class="font-serif font-light text-[56px] lg:text-[80px] leading-[1.02]">Sculpted in <em class="text-gold">22K Gold.</em> Born of Royal Lineage.</h1>
+<p class="mt-8 max-w-md text-[15px] leading-relaxed text-ivory/65 font-light">Three generations of master karigars. Hand-drawn, lost-wax cast and set with uncut polki — each piece traceable by its BIS HUID.</p>
+<div class="mt-10 flex flex-wrap gap-4"><a class="btn gold" onclick="go('catalog')">Explore High Jewellery</a><a class="btn line" onclick="go('salons')">Book Private Viewing</a></div></div>
+<div class="flex justify-center"><div class="shim relative w-full max-w-md aspect-[3/4]"><div class="img w-full h-full" style="border-radius:200px 200px 0 0"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=900&q=80" alt="Gold jewellery" onerror="this.remove()"></div>
+<div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full glass hair flex flex-col items-center justify-center text-center text-[9px] tracking-widest text-gold"><div class="font-serif text-2xl">916</div>BIS<br>HALLMARK</div></div></div></div></div>
+
+<div class="bg-espresso border-y" style="border-color:rgba(212,175,55,.22)"><div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 lg:grid-cols-4">
+<div class="p-6"><div class="text-gold text-xs tracking-widest">01</div><div class="font-serif text-2xl mt-2">Hand-Sketched Gouache</div></div>
+<div class="p-6 lg:border-l" style="border-color:rgba(212,175,55,.22)"><div class="text-gold text-xs tracking-widest">02</div><div class="font-serif text-2xl mt-2">Lost-Wax Casting at 1,064°C</div></div>
+<div class="p-6 lg:border-l" style="border-color:rgba(212,175,55,.22)"><div class="text-gold text-xs tracking-widest">03</div><div class="font-serif text-2xl mt-2">Uncut Syndicate Polki</div></div>
+<div class="p-6 lg:border-l" style="border-color:rgba(212,175,55,.22)"><div class="text-gold text-xs tracking-widest">04</div><div class="font-serif text-2xl mt-2">BIS HUID 6-Digit Traceability</div></div></div></div>
+
+<div class="bg-ivory text-espresso"><div class="max-w-7xl mx-auto px-6 py-32">
+<div class="text-center mb-16"><div class="text-[11px] tracking-[.4em] text-[#a88a1f]">THE LOOKBOOK</div><h2 class="font-serif text-5xl mt-4">Curated Collections</h2></div>
+<div class="grid md:grid-cols-3 gap-8" id="lookbook"></div></div></div>
+
+<div class="bg-noir"><div class="max-w-4xl mx-auto px-6 py-32 text-center relative"><div class="font-serif text-gold text-7xl leading-none">“</div>
+<p class="font-serif italic text-3xl lg:text-4xl leading-snug text-pale/90">We commissioned our daughter's entire trousseau here — the same family that crafted my mother's bangles in 1978. Bhopal's finest, without question.</p>
+<div class="mt-8 text-xs tracking-[.3em] text-gold">MRS. ANITA KHANNA • ARERA COLONY, BHOPAL</div></div></div>
+</section>
+
+<!-- CATALOG -->
+<section class="view bg-ivory text-espresso" id="v-catalog"><div class="max-w-7xl mx-auto px-6 py-24">
+<div class="text-center mb-12"><div class="text-[11px] tracking-[.4em] text-[#a88a1f]">THE COLLECTION</div><h2 class="font-serif text-5xl mt-4">High Jewellery</h2></div>
+<div class="flex flex-wrap gap-2 justify-center" id="cats"></div>
+<div class="grid md:grid-cols-[1fr_auto] gap-4 mt-6 max-w-3xl mx-auto"><input id="q" placeholder="Search pieces…"><div class="flex gap-2" id="purs"></div></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-14" id="grid"></div><p id="none" class="hidden text-center py-20 font-serif text-2xl">No pieces match your search.</p></div></section>
+
+<!-- BRIDAL -->
+<section class="view" id="v-bridal"><div class="bg-noir relative overflow-hidden"><div class="orb w-96 h-96 top-10 right-0"></div><div class="max-w-7xl mx-auto px-6 py-32 grid lg:grid-cols-2 gap-16 items-center relative">
+<div class="img aspect-[4/5] zoom hair"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=900&q=80" alt="Bridal jewellery" onerror="this.remove()"></div>
+<div><div class="text-[11px] tracking-[.4em] text-gold">BRIDAL COUTURE</div><h2 class="font-serif text-6xl mt-4 leading-tight">The Trousseau, <em class="text-gold">Composed.</em></h2>
+<p class="mt-6 text-ivory/65 font-light leading-relaxed">From the first gouache sketch to the final polki setting — our design atelier creates the Rani Haar, Maang Tikka, Kaleere and Nath to match your lehenga fabric.</p>
+<ul class="mt-8 space-y-4 text-sm"><li class="hair p-4"><span class="text-gold">I.</span> Private consultation at the salon</li><li class="hair p-4"><span class="text-gold">II.</span> Hand-sketched design & wax model approval</li><li class="hair p-4"><span class="text-gold">III.</span> 4–8 weeks of karigar craftsmanship</li><li class="hair p-4"><span class="text-gold">IV.</span> HUID hallmarking & IGI certification</li></ul></div></div></div>
+<div class="bg-ivory text-espresso"><div class="max-w-2xl mx-auto px-6 py-24"><h3 class="font-serif text-4xl text-center mb-10">Request a Custom Design</h3>
+<form id="cf" class="space-y-4"><input required placeholder="Full name"><input required type="tel" placeholder="Mobile number"><select><option>Full Bridal Set</option><option>Choker / Haar</option><option>Bangles / Kada</option><option>Groom's Edit</option></select><input type="date"><button class="btn gold w-full">Request Consultation</button><p id="cm" class="text-center text-sm text-[#a88a1f]"></p></form></div></div></section>
+
+<!-- CALC -->
+<section class="view bg-ivory text-espresso" id="v-calc"><div class="max-w-7xl mx-auto px-6 py-24">
+<div class="text-center mb-16"><div class="text-[11px] tracking-[.4em] text-[#a88a1f]">TOOLS</div><h2 class="font-serif text-5xl mt-4">Gold Exchange & Plan</h2></div>
+<div class="grid lg:grid-cols-2 gap-10">
+<div class="hair bg-white p-10"><h3 class="font-serif text-3xl mb-6">Old Gold Exchange Value</h3><div class="space-y-4">
+<label class="text-xs tracking-widest">WEIGHT (GRAMS)</label><input id="w" type="number" value="20" min="0">
+<label class="text-xs tracking-widest">PURITY</label><select id="p"><option value="7850">24K (₹7,850/g)</option><option value="7195" selected>22K (₹7,195/g)</option><option value="5890">18K (₹5,890/g)</option></select>
+<label class="text-xs tracking-widest">MELTING DEDUCTION (%)</label><input id="d" type="number" value="3" min="0" max="20"></div>
+<div class="mt-8 pt-6 border-t border-gold/30"><div class="text-xs tracking-widest text-[#a88a1f]">ESTIMATED VALUE</div><div class="font-serif text-5xl" id="ev"></div><p class="text-xs mt-2 opacity-60">Indicative only. Final value after in-store purity testing.</p></div></div>
+<div class="hair bg-white p-10"><h3 class="font-serif text-3xl mb-6">Swarna Savings Plan</h3><div class="space-y-4">
+<label class="text-xs tracking-widest">MONTHLY INSTALMENT (₹)</label><input id="m" type="number" value="10000" min="1000" step="500">
+<label class="text-xs tracking-widest">TENURE</label><select id="t"><option>11</option><option selected>12</option></select></div>
+<div class="mt-8 pt-6 border-t border-gold/30"><div class="text-xs tracking-widest text-[#a88a1f]">TOTAL JEWELLERY VALUE</div><div class="font-serif text-5xl" id="pv"></div><p class="text-sm mt-2 opacity-70" id="pn"></p></div></div></div></div></section>
+
+<!-- SALONS -->
+<section class="view bg-noir" id="v-salons"><div class="max-w-7xl mx-auto px-6 py-24">
+<div class="text-center mb-16"><div class="text-[11px] tracking-[.4em] text-gold">VISIT US</div><h2 class="font-serif text-5xl mt-4">Bhopal Salons</h2></div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-espresso hair p-10"><h3 class="font-serif text-3xl text-gold">New Market Flagship</h3><p class="mt-4 text-ivory/65 text-sm leading-relaxed">Our heritage salon since 1954.<br>New Market, Bhopal, Madhya Pradesh<br>Mon–Sat 10:30 – 20:30 • Sun by appointment</p></div>
+<div class="bg-espresso hair p-10"><h3 class="font-serif text-3xl text-gold">Arera Colony Atelier</h3><p class="mt-4 text-ivory/65 text-sm leading-relaxed">Private bridal & diamond suites.<br>Arera Colony, Bhopal, Madhya Pradesh<br>Mon–Sat 11:00 – 20:30 • Sun by appointment</p></div></div>
+<div class="mt-24"><h3 class="font-serif text-4xl text-center mb-10">The HUID Guide</h3>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="hair p-8"><div class="text-gold text-xs tracking-widest">STEP 01</div><p class="font-serif text-2xl mt-2">Find the 6-digit code</p><p class="text-sm text-ivory/60 mt-2">Every hallmarked piece carries a unique alphanumeric HUID laser-etched beside the BIS mark.</p></div>
+<div class="hair p-8"><div class="text-gold text-xs tracking-widest">STEP 02</div><p class="font-serif text-2xl mt-2">Verify on BIS Care</p><p class="text-sm text-ivory/60 mt-2">Enter the HUID in the BIS Care app to confirm purity, jeweller and hallmarking centre.</p></div>
+<div class="hair p-8"><div class="text-gold text-xs tracking-widest">STEP 03</div><p class="font-serif text-2xl mt-2">Keep your invoice</p><p class="text-sm text-ivory/60 mt-2">We record the HUID on every bill so resale and exchange are always transparent.</p></div></div></div></div></section>
+</main>
+
+<footer class="bg-noir border-t" style="border-color:rgba(212,175,55,.22)"><div class="max-w-7xl mx-auto px-6 py-16 text-center"><div class="font-serif text-3xl tracking-[.3em] text-gold">SHREE JEWELLERS</div><div class="text-[10px] tracking-[.35em] text-pale/60 mt-2">FINE JEWELLERY • EST. 1954</div><div class="mt-8 text-xs text-ivory/40">New Market & Arera Colony, Bhopal • BIS 916 Hallmarked • IGI Certified<br>© 2026 Shree Jewellers. Displayed rates are indicative.</div></div></footer>
+
+<!-- MODAL -->
+<div id="modal" class="hidden fixed inset-0 z-[90] bg-black/80 flex items-center justify-center p-4" onclick="if(event.target===this)closeM()"><div class="bg-ivory text-espresso max-w-4xl w-full grid md:grid-cols-2 max-h-[92vh] overflow-auto relative">
+<button onclick="closeM()" class="absolute top-3 right-4 text-3xl z-10">×</button><div class="img min-h-[320px]" id="mi"></div><div class="p-10" id="mt"></div></div></div>
+
+<script>
+const IMG=['1599643478518-a784e5dc4c8f','1515562141207-7a88fb7ce338','1605100804763-247f67b3557e','1535632066927-ab7c9ab60908','1611591437281-460bfbe1220a','1573408301185-9146fe634ad0'];
+const P=[
+['Begum Noor Jahan Jadau Choker','Bridal & Polki','22K',62,285000,'Uncut polki with Basra pearl drops, meenakari reverse.'],
+["Nawab's Emerald Sarpech",'Navratna & Gemstones','22K',34,198000,'Zambian emeralds in a Mughal-inspired turban ornament.'],
+['Aarohi Temple Nakshi Haram','22K Heritage Gold','22K',88,742000,'Hand-chiselled nakshi goddess motifs, long haram.'],
+['Solitaire VVS1 Tennis Bracelet','VVS Diamonds','18K',14,395000,'4.2 ct total, VVS1 clarity, IGI certified.'],
+['Navratna Royal Signet Ring',"Men's Royal Edit",'22K',18,164000,'Nine sacred gems around a gold signet crest.'],
+['24K Lakshmi Gold Coin (20g)','24K Coins','24K',20,162000,'999.9 purity, assay-sealed, Lakshmi-Ganesh obverse.'],
+['Rani Haar Kundan Set','Bridal & Polki','22K',96,812000,'Three-tier kundan haar with matching jhumkas.'],
+['Peacock Kada Pair','22K Heritage Gold','22K',46,358000,'Hand-engraved mor motifs, screw-fit closure.'],
+['Pear Diamond Drop Earrings','VVS Diamonds','18K',7,228000,'2.0 ct pear cuts, VVS2, white-gold halo.'],
+['Ruby Maharani Pendant','Navratna & Gemstones','22K',22,176000,'Burma-heat ruby in a lotus-petal gold frame.'],
+["Maharaja's Rudraksha Chain",'Men\'s Royal Edit','22K',52,392000,'Gold-capped rudraksha with an uncut diamond pendant.'],
+['Kundan Maang Tikka & Nath','Bridal & Polki','22K',28,146000,'Bridal head-piece set with Basra pearl fringe.']];
+const CATS=['All','Bridal & Polki','22K Heritage Gold','VVS Diamonds','Navratna & Gemstones',"Men's Royal Edit",'24K Coins'],PUR=['All','22K','18K','24K'];
+let cat='All',pur='All';const inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+// PRODUCT_IMAGES: paste your own photo URL or local path (e.g. 'images/choker.jpg') for any piece, keyed by its position 0-11 in the list above.
+const PRODUCT_IMAGES={0:'',1:'',2:'',3:'',4:'',5:'',6:'',7:'',8:'',9:'',10:'',11:''};
+const im=(i,w=700)=>PRODUCT_IMAGES[i]||`https://images.unsplash.com/photo-${IMG[i%6]}?w=${w}&q=80`;
+const $=s=>document.querySelector(s);
+function go(v){document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+v));document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.dataset.v===v));scrollTo({top:0})}
+document.querySelectorAll('#nav a').forEach(a=>a.onclick=()=>go(a.dataset.v));
+$('#nav a').classList.add('on');
+$('#lookbook').innerHTML=[['Bridal & Polki','The Bridal Edit'],['VVS Diamonds','Diamond Atelier'],['22K Heritage Gold','Temple Heritage']].map((c,i)=>`<div class="zoom cursor-pointer" onclick="cat='${c[0]}';go('catalog');render()"><div class="img aspect-[3/4] hair"><img src="${im(i+1)}" onerror="this.remove()" alt=""></div><div class="font-serif text-3xl mt-5">${c[1]}</div><div class="text-xs tracking-widest text-[#a88a1f] mt-1">DISCOVER →</div></div>`).join('');
+function pills(){$('#cats').innerHTML=CATS.map(c=>`<span class="pill ${c===cat?'on':''}" onclick="cat='${c.replace(/'/g,"\\'")}';render()">${c}</span>`).join('');$('#purs').innerHTML=PUR.map(c=>`<span class="pill ${c===pur?'on':''}" onclick="pur='${c}';render()">${c}</span>`).join('')}
+function render(){pills();const q=$('#q').value.toLowerCase();const L=P.map((p,i)=>({p,i})).filter(({p})=>(cat==='All'||p[1]===cat)&&(pur==='All'||p[2]===pur)&&(p[0]+p[5]).toLowerCase().includes(q));
+$('#none').classList.toggle('hidden',L.length>0);
+$('#grid').innerHTML=L.map(({p,i})=>`<div class="card cursor-pointer" onclick="openM(${i})"><div class="img aspect-[4/5] hair"><img loading="lazy" src="${im(i)}" onerror="this.remove()" alt="${p[0]}"></div><div class="text-[10px] tracking-[.25em] text-[#a88a1f] mt-4">${p[1].toUpperCase()} • ${p[2]}</div><div class="font-serif text-2xl leading-tight mt-1">${p[0]}</div><div class="text-sm mt-1 opacity-70">${inr(p[4])}</div></div>`).join('')}
+$('#q').oninput=render;
+function openM(i){const p=P[i];$('#mi').innerHTML=`<img src="${im(i,900)}" onerror="this.remove()" alt="">`;$('#mt').innerHTML=`<div class="text-[10px] tracking-[.3em] text-[#a88a1f]">${p[1].toUpperCase()}</div><h3 class="font-serif text-4xl mt-2">${p[0]}</h3><p class="mt-4 text-sm opacity-70 leading-relaxed">${p[5]}</p><dl class="mt-6 text-sm divide-y" style="--tw-divide-opacity:1">${[['Purity',p[2]+' • BIS Hallmarked'],['Gross weight',p[3]+' g'],['Certification',p[1]==='VVS Diamonds'?'IGI + HUID':'HUID traceable'],['Price',inr(p[4])]].map(r=>`<div class="flex justify-between py-3 border-b" style="border-color:rgba(212,175,55,.3)"><dt class="opacity-60">${r[0]}</dt><dd class="font-medium">${r[1]}</dd></div>`).join('')}</dl><a class="btn gold mt-8 w-full text-center" onclick="closeM();go('salons')">Book Private Viewing</a>`;$('#modal').classList.remove('hidden');$('#modal').classList.add('flex')}
+function closeM(){$('#modal').classList.add('hidden');$('#modal').classList.remove('flex')}
+addEventListener('keydown',e=>e.key==='Escape'&&closeM());
+function calc(){const v=(+$('#w').value||0)*(+$('#p').value)*(1-(+$('#d').value||0)/100);$('#ev').textContent=inr(v);
+const m=+$('#m').value||0,t=+$('#t').value;$('#pv').textContent=inr(m*t+m);$('#pn').textContent=`Pay ${t} instalments of ${inr(m)}; we add the final instalment (${inr(m)}) as a bonus.`}
+['w','p','d','m','t'].forEach(id=>$('#'+id).oninput=calc);calc();
+$('#cf').onsubmit=e=>{e.preventDefault();$('#cm').textContent='Thank you — our atelier will call you within 24 hours.';e.target.reset()};
+render();
+addEventListener('load',()=>setTimeout(()=>{$('#pre').style.transform='translateY(-100%)';setTimeout(()=>$('#pre').remove(),700)},1200));
+</script></body></html>
